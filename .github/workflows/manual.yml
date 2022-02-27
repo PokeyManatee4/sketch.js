@@ -1,0 +1,11 @@
+name: Buildflow
+
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Install Test
+      run: sudo apt install npm
