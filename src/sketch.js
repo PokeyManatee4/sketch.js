@@ -17,3 +17,7 @@ function setup() {
    }, 5000);
    alert(Alert);
 }
+
+function draw() {
+  background(220);
+}
