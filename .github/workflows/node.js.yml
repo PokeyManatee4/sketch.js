@@ -1,0 +1,21 @@
+name: Node.js CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-lates
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install npm
+      with: |    
+    - run: sudo apt install npm
+    - run: npm ci
+    - run: npm run build --if-present
+    - run: npm test
